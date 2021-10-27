@@ -85,7 +85,12 @@ run().catch(console.dir);
 
 app.get('/', (req, res) => {
     res.send("running");
+});
+
+app.get('/hello', (req, res) => {
+    res.send('hello updated!')
 })
+
 app.listen(port, () => {
     console.log("listening from port", port);
 })
